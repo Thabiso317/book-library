@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overview{
+            height:50vh;
+            display: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+        }
+        .back{
+            height:100vh;
+            display: grid;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0);
+            margin: 0;
+            padding: 0;
+            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 250px auto;
+
+        }
+        .oranges {
+            background-color:rgb(245, 183, 12);
+            height: 847px;
+            align-self: bottom;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 1px;
+            vertical-align: bottom;
+            display: relative;
+            width: 752px;
+            float: right;
+            margin-top: 52px;
+            padding-left: 20px;
+            padding-top: 0px;
+            padding-bottom: 80px;
+            padding-right: 20px;
+            left: -42rem;
+
+            
+        }
+        .grid-conatiner{
+            width: 1551px;
+            height: 797;
+            padding: auto;position: relative;
+            margin: 20px;
+            border: 10px solid black;
+            border-radius: 50px;
+            left: -60rem;
+            justify-self: center;
+        }
+       .main {
+            border-radius: 50px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 100px auto 20px;
+            height: 100vh;
+            z-index: 5;}
+            .grid-conatiner{
+                z-index: 100%;
+                background-color:rgb(255, 255, 255);
+                width: 1551px;
+                height: 797px;
+                border-width: 5px;
+                margin: 20px;
+                left: -60rem
+            
+              
+            }
+            .lab::after{
+    content:".";
+    color:orange;
+    margin: 0px;
+  }
+  .lab{
+    font: size 50px;
+    margin: 200px;
+    margin-top: 0px;
+    margin-bottom:-65px;
+    margin-right: 0px;
+    position: relative;
+  }
+  h1{
+   font-size:100px;
+
+ }
+ .img {  
+    position: absolute;
+   margin-bottom: 0px;
+    height: top;
+    right:214px;
+    top: -86px;
+    margin-left: 0px;
+  }
+  .books{
+   padding:10px 0px;
+   display:flex;
+   align-items: right;
+   background-image: radial-gradient(circle,#ecb51b 0%,#ad8c 0%);
+   height: 5;
+   border-radius: 20px;
+   margin: 3.5rem .5rem;
+   justify-content: space-between;
+   position: relative;
+   width: 300px;
+   float: left;
+   clear: both ;
+   left: 500px;
+ }
+ .book-cov{
+   width:70px;
+   height:115px;
+   border-radius: 10px;
+   margin-left: 10px;
+   position: absolute;
+   top: -40px;
+   
+ }
+.me{
+    margin-top: 10px;
+    height: 10px;
+    margin-bottom:10px;
+    top: 0px;
+    margin-left: 0px;
+
+}
+ .read-more{
+     top: 50px;
+     display: flex;
+     margin-right: 20px;
+     margin-top: 50px;
+ }
+ .search{
+     margin-top: -105px;
+     float:right;
+     margin-right: 460px;
+     
+ }
+ input[type=text]{
+     padding: 7px;
+     border:none;
+     font-size: 16px;
+     font-family: sans-serif;
+ }
+ button{
+     float:right;
+     background:orange;
+     border-radius: 0 5px 5px 0;
+     color:white;
+     cursor: pointer;
+     position: relative;
+     padding: 7px;
+     font-family: sans-serif;
+     border: none;
+     font-size: 16px;
+ }
+ .top-manu{
+     margin-top:auto;
+     position: relative;
+ }
+ .bold{
+     display: flex;
+     margin: top 10px;
+     margin-left: 513px;
+     margin-right: -31px;
+     margin-bottom: 10px;
+     align-content: center;
+     font-size: xx-large;
+     font-weight: 16px;
+ }
+ .sit{
+     position: relative;
+     margin-left: 1254px;
+     margin-top: -140px;
+     margin-right:00px;
+     margin-bottom: 25px;
+     font-size: larger;
+     font-weight: 16px;
+     list-style-type: none;
+
+ }
+ 
+ a{
+     text-decoration:none;
+     color:black;
+ }
+ .move{
+     position: relative;
+     margin-left:514px;
+     margin-right:00px;
+     font-size:larger;
+     font-family: 00px;
+     margin-top: 182px;
+     display: flex;
+     margin-bottom: -22px;
+ }
+ .pass{
+     position: relative;
+     margin-left:-430px;
+     margin-right: -9px;
+     display:flex;
+     margin-bottom:0px;
+     margin-top: 202px;
+     font-size: larger;
+     font-weight: 16px;
+ }
+ .pic{
+   padding:10px 0px;
+   display:flex;
+   align-items: right;
+   margin-top: 0px;
+   height: 200px;
+   border-radius: 0px;
+   margin: -1.5rem 0.5rem;
+   justify-content: space-between;
+   position: relative;
+   width: 394px;
+   float: left;
+   clear: both ;
+   left: 500px;
+
+ }
+ .book-details p {
+    margin:0px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     margin-left: 205px;
+     margin-bottom: 35px;
+     position: relative;
+ }
+ .pic  p {
+    margin:0px;
+     margin-top: 4px;
+     margin-bottom: -7px;
+     margin-left: 4px;
+     position: relative;
+     padding-top: 9px;
+     display:flex;
+ }
+
+ .title p {
+    margin:0px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     margin-left: 205px;
+     margin-bottom: 35px;
+     position: relative;
+ }
+ p{
+     margin:0px;
+     margin-top: 11px;
+     margin-bottom: 0px;
+     margin-left: 97px;
+     margin-bottom: 35px;
+     position: relative;
+ }
+ #zz{
+     width: 130px;
+     border-radius:40px;
+     margin-top: -900px;
+     margin-left: -405px;
+     margin-bottom: 450px;
+     margin-right: 20px;
+     top: 100px;
+     position: relative;
+ }
+ /*{
+     padding: 0px;
+     margin: 0px;text-decoration: none;
+     list-style: none;
+     box-sizing: border-box;
+ }*/
+ body{
+     font-family: montserrat;
+     overflow: hidden;
+ }
+ nav{
+     height: 80px;
+     width: 100px;
+ }
+ label.logo{
+     color:black;
+     font-size: 30px ;
+     line-height: 50px;
+     font-weight: bold;
+     margin-top: 00px;
+     margin-bottom: 00px;
+     margin-left: 00px;
+     margin-right: 0;
+ }
+ nav ul{
+     float:left;
+     margin-top:00px;
+     margin-bottom: 00px;
+     margin-left: 00px;
+     margin: 00px;
+ }
+ .profile{
+    padding: 66px 0;
+    padding-left: 1.5rem;
+    width: 171px;
+    height: 230px;
+    background: #3E5151;
+    background: -webkit-linear-gradient(to right, #afada8, #758585); 
+    background: linear-gradient(to right, #afada8, #758585);
+    border-bottom-right-radius: 13px;
+    border-top-right-radius: 9px;
+    box-sizing: border-box;
+    margin-top: -461px;
+    margin-left: 13px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.settings{
+    position: fixed;
+    display: flex;
+  
+    margin-top: 5.2rem;
+    align-items: flex-start;
+}
+.few{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+ 
+    width: 121px;
+    height: 309px;
+    /* box-sizing: border-box; */
+    font-size: 15px;
+
+}
+.board-icon{
+    margin:0px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     margin-left: 20px;
+     margin-bottom: 35px;
+    width:100%;
+ }
+ .side-bar{
+    margin-right: 6.5rem;
+     align-items: flex-start; 
+    text-align: left;
+    border: 10px;
+}
+.settings img{
+   width: 15px;
+   height: 15px;
+
+}
+.settings span{
+    margin-left: 8px;
+    box-sizing: border-box;
+   
+}
+
+.settings p{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+   
+}
+.settings p .board-icon{
+  width: 24px;
+  height: 24px;
+}
+
+.logo{
+    padding: 122px 0;
+    width: 152px;
+    height: auto;
+    margin-top: 11rem;
+    margin-left: -7.1rem;
+}
+.logo h4{
+    font-size: 0.7rem;
+}
+.logo h4 span{
+    font-size: 1.2rem;
+    color: orange;
+    margin-top: 6px;
+    
+}
+.settings p .board-icon{
+  width: 24px;
+  height: 24px;
+}
+.hearder-logo{
+    color: orange;}
+
+ .famous-authors{
+    padding: 0 10px;
+    background: #0abdb4; 
+    background: -webkit-linear-gradient(to right, #eaeaea, #dbdbdb, #F2F2F2);  
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2); 
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 250px;
+}
+.auther{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+.num-books{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.fam-auth-list{
+    display: flex;
+    align-items: center;
+}
+.fam-auth-list{
+    display: flex;
+    align-items: center;
+}
+.new-book-cover{
+    width: 120px;
+    height: 160px;
+    margin-top: 15px;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+.new-book{
+    text-align: center;
+    box-sizing: border-box;
+    width: 101px;
+    /* margin-right: 2.5rem; */
+}
+.new-author-name{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.b-dces{
+    margin-top: 5px;
+    padding: 2px 2.5px;
+    border-radius: 14px;
+    background: #c4c4c4;
+}
+.new-books-list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.greetings {
+    position:relative;
+    margin-top: 60px;
+    text-align: left;
+    margin-left: 63px;
+    margin-right: 00px;
+    margin-bottom: 00px;
+    
+    
+}
+#user-name{
+    margin-left: 70px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+}
+.hero-content{
+    width: 100%;
+    overflow: hidden;
+}
+        
+     </style>   
+</head>
+<body>
+   
+   
+    <div class="overview">
+        <h1 class="lab">Kindle</h1>
+        <div class="oranges">
+            <div class="grid-conatiner">
+                <div class="top-manu">
+                    <p class="move">Book you read last</p>
+                    
+
+               <div class="sit">
+                   <a href="#new release">New Release</a>
+                   <a href="#Feature">Feature</a>
+                   <a href="#other">::</a>
+               </div>
+               <p class="bold"> Kindle. </p>
+                <form class="search">
+                    <input type="text" placeholder="search">
+                    <button>Search</button>
+                </form>
+                
+
+                <div class="read-more">
+                    <div class="books">
+                        <div class="book-cover">
+                            <img src="img/411BN5HTpvL._AC_UL140_SR140,140_.jpg" class="book-cov">
+                            <div class="book-title">
+                            <p class="title">Civil War</p>
+                            <p class="book-desription">South African War</p>
+                        </div>
+                        </div>
+            </div>
+            
+            <div class="books"> 
+                <div class="book-cover">
+                    <img src="img/71+jbSbmhyL._AC_UL140_SR140,140_.jpg" class="book-cov">
+                    <div class="details">
+                        <p class="title">The best man win always</p>
+                        <p class="book-desription">Ready to read</p>
+                    </div>
+                </div>
+            </div>
+            <div class="books">
+                <div class="book-cover">
+                    <img src="img/8182SX5LMLL._AC_UL160_SR160,160_.jpg" class="book-cov">
+                    <div class="book-details">
+                        <p class="title">Zoo Lake</p>
+                        <p class="book-description">Auther John Jay</p>
+                    </div>
+                </div>
+            </div>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <p class="pass">New Release</p>
+
+            <div class="under">
+
+            </div>
+        </div>
+        <main>
+
+            <div class="pic">
+
+            
+            <div class="row">
+                <img src="img/dolly.jpg" alt="" height="200" width="150"/>
+                <p class="book-details">Run rose run</p>
+                <p class="book-desription">James Petterson</p>
+                <p class="b-dces">Rose</p> 
+
+            </div>
+                <div class="row">
+                    <img src="fix/man.jpg" alt="" height="200" width="150"/>
+                    <p class="book-details">Run rose run</p>
+                    <p class="book-desription">Bill Gate</p>
+                    <p class="b-dces">African</p> 
+                </div>
+
+                <div class="row">
+                    <img src="img/men.jpg" alt="" height="200" width="150"/>
+                    <p class="book-details">Water Boy</p>
+                    <p class="book-desription">Mack Zack</p>
+                    <p class="b-dces">Essential</p> 
+                </div>
+                <div class="row">
+                    <img src="fix/ages.jpg" alt="" height="200" width="150"/>
+                    <p class="book-details">Safari</p>
+                    <p class="book-desription">Pyhton</p>
+                    <p class="b-dces">James</p> 
+                </div>
+                <div class="row">
+                    <img src="fix/man.jpg" alt="" height="200" width="150"/>
+                    <p class="book-details">Run rose run</p>
+                    <p class="book-desription">Bruce</p>
+                    <p class="b-dces">Safari</p> 
+                </div>
+                <div class="famous-authors">
+                    <div class="fam-auth-list">
+                        <div class="author-pic">
+                            <img class="auther" src="icon/Cute.jpg">
+                        </div>
+                            <div class="auther-details">
+                                <p class="author-name">Brook</p>
+                                <p class="num-books">7 <span>books</span></p>
+                            </div>
+                    </div>
+                    <div class="fam-auth-list">
+                        <div class="author-pic">
+                            <img class="auther" src="icon/happy-face.png">
+                        </div>
+                            <div class="auther-details">
+                                <p class="author-name">Hope</p>
+                                <p class="num-books">6 <span>books</span></p>
+                            </div>
+                    </div>
+                    <div class="fam-auth-list">
+                        <div class="author-pic">
+                            <img class="auther" src="icon/smill.jpg">
+                        </div>
+                            <div class="auther-details">
+                                <p class="author-name">Chris</p>
+                                <p class="num-books">11<br> <span>books</span></p>
+                            </div>
+                            
+                    </div>
+                </div>
+               
+            </div>
+            
+        </div>
+            <br>
+           
+        <!---Side-bar---->
+        <div class="side-bar">
+            <div class="profile">
+                <img src="fix/face.jpg" id="loaded" alt="profile" height="100" width="100"/>
+                <p class="greetings">Welcome<br>back</p>
+                <h5 id="user-name">MLAB</h5>
+            </div>        
+        </div>
+        <div class="settings">
+            <div class="flex-container">
+            <p><img src="" class="icon/grid.svg"><span>my<br> profile board</span></p>
+            <p><img src="icon/collections.svg"><span>collection</span></p>
+            <p><img src="icon/saved.svg"><span>saved</span></p>
+            <p id="update-pic"><img src="icon/profile.svg"><span>profile</span></p>
+            <p id="logout" ><img src="icon/logout.svg"><span>logout</span></p>
+        </div>
+        <div class="logo"><h4>product of <br><span>Amazon</span></h4></div>
+    </div>
+        <div class="hero-content">
+        </div>   
+        
+    </div>
+        </div>
+        </div>
+        </main>
+</body>
+</html>

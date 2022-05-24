@@ -1,0 +1,127 @@
+    img {  
+    position: absolute;
+   
+    height: top;
+    right: 100px;
+    top: 0px;
+  }
+  .lab::after{
+    content:".";
+    color:orange;
+    margin: 0px;
+  }
+  .lab{
+    font: size 50px;
+    margin: 50px
+  }
+ h1{
+   font-size:100px;
+
+ }
+  h1::after{
+    content: ".";
+    color: orange;
+    margin: 0px;
+  }
+
+ * {
+    box-sizing: border-box;
+    border-color: #0b7dda;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: left; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ .grid-container {
+   display: flex;
+    width:  1600px;
+    height: 700px;  
+    padding: 50px;
+    border: 10px solid black;
+    border-radius: 50px;
+    position: absolute;
+    top: center;
+   border-width: 10px;
+   display: grid;
+   align-content: space-between;
+   margin-left: 1000px;
+   z-index: 100;
+   background-color: rgb(255, 255, 255);
+}
+.div{
+    width:100;
+}
+
+
+ .yellow-contaiber{
+   width: 60%;
+   height: 80vh;
+  background-color: orange;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 0px;
+  float:left;
+  left: 50%;
+  top: 50px;
+  padding-bottom: 1em;
+  padding: top 10px;
+ }
+ *{
+   margin: 0px;
+  
+ }
+ .books{
+   padding:10px 0px;
+   display:table-column-group;
+   align-items: right;
+   background-image: radial-gradient(circle,#ecb51b 0%,#ad8c 0%);
+   height: 100px;
+   border-radius: 20px;
+   margin: 40px;;
+   justify-content: space-between;
+   position: relative;
+   width: 300px;
+   float: left;
+   clear: both ;
+ }
+ .book-cov{
+   width:70px;
+   height:115px;
+   border-radius: 15px;
+   margin-left: 10px;
+   position: absolute;
+   top: -40px;
+ }
+ .book-cover{
+   margin-right: 15px;
+ }
